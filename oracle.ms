@@ -54,22 +54,35 @@ it is expressed with logic gates
 the main ones are 
 
 not:
+
 in | out
+
 0  |  1
+
 1  |  0
 
 and:
+
 A | B | out
+
 0 | 0 | 0
+
 0 | 1 | 0
+
 1 | 0 | 0 
+
 1 | 1 | 1
 
 or:
+
 A | B | out
+
 0 | 0 | 0
+
 0 | 1 | 1
+
 1 | 0 | 1
+
 1 | 1 | 1
 
 these can be put together to make all other gates, like xor and nand
@@ -86,10 +99,15 @@ not is expressed with a line over it a (use !(a) to express this on this doc) th
 basics
 .PP
 identitys:
+
 A.1 = A
+
 A+1 = 1
+
 A.0 = 0
+
 A+0 = A
+
 !(!(A)) = A
 
 theses are just a few simple ones, however they are self explanitory
