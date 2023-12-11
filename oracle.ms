@@ -97,7 +97,15 @@ theses are just a few simple ones, however they are self explanitory
 advanced
 .PP
 demorgans law states:
-!(a+b) = !(a).!(b) (works both ways)
-this can be remembered with break the line change the sign
+	!(a+b) = !(a).!(b) (works both ways)
+	this can be remembered with break the line change the sign
 
+absorbsion law states:
+	a + !(a).b = a + b
+	this can be seen in the truth table 
+	a | b | !(a) | Q
+	0 | 0 |   1  | 0
+	0 | 1 |   1  | 1
+	1 | 0 |   0  | 1
+	1 | 1 |   0  | 1
 
