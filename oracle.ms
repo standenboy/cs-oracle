@@ -43,6 +43,28 @@ hex
 hex is easy enough, its base 16, so it goes from 0 - f, if you unsure on a value, think if it would be a valid color code
 a nice trick for converting hex is to take the first digit and then convert it into 4 binary bits (nibble), then put that together with all the other values; also converted to binary, then you have converted
 this trick also works the other way
+.NH 
+boolean
+.PP
+boolean logic is what powers our computers
+it is expressed with logic gates
+the main ones are 
 
+not:
+in | out
+0  |  1
+1  |  0
 
+and:
+A | B | out
+0 | 0 | 0
+0 | 1 | 0
+1 | 0 | 0 
+1 | 1 | 1
 
+or:
+A | B | out
+0 | 0 | 0
+0 | 1 | 1
+1 | 0 | 1
+1 | 1 | 1
