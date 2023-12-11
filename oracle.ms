@@ -2,7 +2,7 @@
 .TL 
 the computer science oracle
 .AU 
-lucas standen
+lucas standen & amy collins
 .NH  
 number systems 
 .NH 2 
@@ -25,7 +25,7 @@ floating point values
 on some questions will ask for floating point, they will tell you how long the mantisa and exponent
 
 it will be in the form
-	mantisa x 2 ^ exponent
+mantisa x 2 ^ exponent
 
 both of these values are writen in 2s compliment values
 
@@ -97,15 +97,23 @@ theses are just a few simple ones, however they are self explanitory
 advanced
 .PP
 demorgans law states:
-	!(a+b) = !(a).!(b) (works both ways)
-	this can be remembered with break the line change the sign
+!(a+b) = !(a).!(b) (works both ways)
+this can be remembered with break the line change the sign
 
 absorbsion law states:
-	a + !(a).b = a + b
-	this can be seen in the truth table 
-	a | b | !(a) | Q
-	0 | 0 |   1  | 0
-	0 | 1 |   1  | 1
-	1 | 0 |   0  | 1
-	1 | 1 |   0  | 1
+a + !(a).b = a + b
+this can be seen in the truth table 
+
+a | b | !(a) | Q
+
+0 | 0 |   1  | 0
+
+0 | 1 |   1  | 1
+
+1 | 0 |   0  | 1
+
+1 | 1 |   0  | 1
+
+.NH 
+externel devices
 
