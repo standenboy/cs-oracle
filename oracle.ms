@@ -92,6 +92,7 @@ algebra
 they can be expressed in algebra
 
 and is = a.b
+
 or is = a+b
 
 not is expressed with a line over it a (use !(a) to express this on this doc) these can then be simplifed to make nicer expressions
