@@ -1,5 +1,5 @@
-<!-- Creator     : groff version 1.23.0 -->
-<!-- CreationDate: Mon Dec 11 13:06:41 2023 -->
+<!-- Creator     : groff version 1.22.4 -->
+<!-- CreationDate: Mon Dec 11 13:37:49 2023 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -26,6 +26,11 @@
 <a href="#1.1.1. negative values">1.1.1. negative values</a><br>
 <a href="#1.1.2. floating point values">1.1.2. floating point values</a><br>
 <a href="#1.2. hex">1.2. hex</a><br>
+<a href="#2. boolean">2. boolean</a><br>
+<a href="#2.1. overview">2.1. overview</a><br>
+<a href="#2.2. algebra">2.2. algebra</a><br>
+<a href="#2.2.1. basics">2.2.1. basics</a><br>
+<a href="#2.2.2. advanced">2.2.2. advanced</a><br>
 
 <hr>
 
@@ -83,11 +88,11 @@ exponent</p>
 
 
 <p>it will be in the form</p></td>
-<td width="7%">
+<td width="9%">
 
 
-<p>mantisa x 2 &#710; exponent</p></td>
-<td width="85%">
+<p>mantisa x 2 ^ exponent</p></td>
+<td width="83%">
 </td></tr>
 </table>
 
@@ -95,17 +100,17 @@ exponent</p>
 in 2s compliment values</p>
 
 <p style="margin-top: 1em">to convert to floating point try
-multiplying the number by x 2 &#710; -x, where x is the
-exponent, you want to incress x until you reach a value that
-is bellow 1, ie 0.925 then from there using a table
-calculate the mantisa the mantisa has the most signifigant
-bit as -1, then halfing as it goes down -1 | 1/2 | 1/4 | 1/8
-etc... just use trial and error to find a value that is
-correct, it will usually be obvious</p>
+multiplying the number by x 2 ^ -x, where x is the exponent,
+you want to incress x until you reach a value that is bellow
+1, ie 0.925 then from there using a table calculate the
+mantisa the mantisa has the most signifigant bit as -1, then
+halfing as it goes down -1 | 1/2 | 1/4 | 1/8 etc... just use
+trial and error to find a value that is correct, it will
+usually be obvious</p>
 
 <p style="margin-top: 1em">converting back to denary is
 very easy, as you calculate the mantisa and then do mantisa
-x 2 &#710; exponent (sub in the values)</p>
+x 2 ^ exponent (sub in the values)</p>
 
 <h3>1.2. hex
 <a name="1.2. hex"></a>
@@ -119,6 +124,81 @@ is to take the first digit and then convert it into 4 binary
 bits (nibble), then put that together with all the other
 values; also converted to binary, then you have converted
 this trick also works the other way</p>
+
+<h2>2. boolean
+<a name="2. boolean"></a>
+</h2>
+
+
+<h3>2.1. overview
+<a name="2.1. overview"></a>
+</h3>
+
+
+<p style="margin-top: 1em">boolean logic is what powers our
+computers it is expressed with logic gates the main ones
+are</p>
+
+<p style="margin-top: 1em">not: in | out 0 | 1 1 | 0</p>
+
+<p style="margin-top: 1em">and: A | B | out 0 | 0 | 0 0 | 1
+| 0 1 | 0 | 0 1 | 1 | 1</p>
+
+<p style="margin-top: 1em">or: A | B | out 0 | 0 | 0 0 | 1
+| 1 1 | 0 | 1 1 | 1 | 1</p>
+
+<p style="margin-top: 1em">these can be put together to
+make all other gates, like xor and nand</p>
+
+<h3>2.2. algebra
+<a name="2.2. algebra"></a>
+</h3>
+
+
+<p style="margin-top: 1em">they can be expressed in
+algebra</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="8%">
+
+
+<p>and is = a.b or is = a+b</p></td>
+<td width="17%"></td>
+<td width="8%">
+</td>
+<td width="9%">
+</td>
+<td width="8%">
+
+
+<p>- not is expressed with a line over it a (use !(a) to
+express this on this doc) these can then be simplifed to
+make nicer expressions</p></td>
+<td width="50%">
+</td></tr>
+</table>
+
+<h4>2.2.1. basics
+<a name="2.2.1. basics"></a>
+</h4>
+
+
+<p style="margin-top: 1em">identitys: A.1 = A A+1 = 1 A.0 =
+0 A+0 = A !(!(A)) = A</p>
+
+<p style="margin-top: 1em">theses are just a few simple
+ones, however they are self explanitory</p>
+
+<h4>2.2.2. advanced
+<a name="2.2.2. advanced"></a>
+</h4>
+
+
+<p style="margin-top: 1em">demorgans law states: !(a+b) =
+!(a).!(b) (works both ways) this can be remembered with
+break the line change the sign</p>
 <hr>
 </body>
 </html>
