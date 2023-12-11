@@ -1,0 +1,122 @@
+<!-- Creator     : groff version 1.22.4 -->
+<!-- CreationDate: Mon Dec 11 12:37:08 2023 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>the computer science oracle</title>
+
+</head>
+<body>
+
+<h1 align="center">the computer science oracle</h1>
+
+<a href="#1. number systems">1. number systems</a><br>
+<a href="#1.1. binary">1.1. binary</a><br>
+<a href="#1.1.1. negative values">1.1.1. negative values</a><br>
+<a href="#1.1.2. floating point values">1.1.2. floating point values</a><br>
+<a href="#1.2. hex">1.2. hex</a><br>
+
+<hr>
+
+
+<p align="center"><i>lucas standen</i></p>
+
+<h2>1. number systems
+<a name="1. number systems"></a>
+</h2>
+
+
+<h3>1.1. binary
+<a name="1.1. binary"></a>
+</h3>
+
+
+<p style="margin-top: 1em">binary numbers are usually 8
+bits long, or some multiple of 8 the least sigifigant bit
+(right most) is always 1 the next bit is 2 times the
+previous when adding numbers its just like normal but 1 is
+the largest number that can be in a collum</p>
+
+<h4>1.1.1. negative values
+<a name="1.1.1. negative values"></a>
+</h4>
+
+
+<p style="margin-top: 1em">when representing negative
+numbers we use twos compliment we change the most
+signifigant bit (left most) to equal a negative of its
+self</p>
+
+<p style="margin-top: 1em">to get the negative of a number
+(in twos compliment), flip all the bits and add 1</p>
+
+<p style="margin-top: 1em">to subtract, convert a number
+into twos compliment (see above), then add it to the main
+value, this will be the same as x+-y (this will give a twos
+compliment output)</p>
+
+<h4>1.1.2. floating point values
+<a name="1.1.2. floating point values"></a>
+</h4>
+
+
+<p style="margin-top: 1em">on some questions will ask for
+floating point, they will tell you how long the mantisa and
+exponent</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%">
+
+
+<p>it will be in the form</p></td>
+<td width="10%">
+
+
+<p>mantisa x 2 ^ exponent</p></td>
+<td width="80%">
+</td></tr>
+</table>
+
+<p style="margin-top: 1em">both of these values are writen
+in 2s compliment values</p>
+
+<p style="margin-top: 1em">to convert to floating point try
+multiplying the number by ^ 2 ^ -x, where x is the exponent,
+you want to incress x until you reach a value that is bellow
+1, ie 0.925 then from there using a table calculate the
+mantisa the mantisa has the most signifigant bit as -1, then
+halfing as it goes down -1 | 1/2 | 1/4 | 1/8 etc... just use
+trial and error to find a value that is correct, it will
+usually be obvious</p>
+
+<p style="margin-top: 1em">converting back to denary is
+very easy, as you calculate the mantisa and then do mantisa
+x 2 ^ exponent (sub in the values)</p>
+
+<h3>1.2. hex
+<a name="1.2. hex"></a>
+</h3>
+
+
+<p style="margin-top: 1em">hex is easy enough, its base 16,
+so it goes from 0 - f, if you unsure on a value, think if it
+would be a valid color code a nice trick for converting hex
+is to take the first digit and then convert it into 4 binary
+bits (nibble), then put that together with all the other
+values; also converted to binary, then you have converted
+this trick also works the other way</p>
+<hr>
+</body>
+</html>
