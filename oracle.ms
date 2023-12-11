@@ -69,6 +69,3 @@ A | B | out
 0 | 1 | 1
 1 | 0 | 1
 1 | 1 | 1
-
-lol balls
-these are helpful
