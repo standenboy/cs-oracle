@@ -70,8 +70,5 @@ A | B | out
 1 | 0 | 1
 1 | 1 | 1
 
-<<<<<<< HEAD
 lol balls
-=======
 these are helpful
->>>>>>> d1435d98d837ad92ec535cc8be0fc7452b4c704e
