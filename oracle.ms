@@ -69,3 +69,12 @@ A | B | out
 0 | 1 | 1
 1 | 0 | 1
 1 | 1 | 1
+
+these can be put together to make all other gates, like xor and nand
+
+they can be expressed in algebra
+
+and is = a.b
+or is = a+b			     -
+not is expressed with a line over it a (use !(a) to express this on this doc)
+
