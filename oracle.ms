@@ -1,3 +1,4 @@
+.HEAD <LINK REL="stylesheet" TYPE="text/css" HREF="stylesheet.css">
 .TL 
 the computer science oracle
 .AU 

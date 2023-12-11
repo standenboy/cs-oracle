@@ -1,5 +1,5 @@
-<!-- Creator     : groff version 1.22.4 -->
-<!-- CreationDate: Mon Dec 11 12:37:08 2023 -->
+<!-- Creator     : groff version 1.23.0 -->
+<!-- CreationDate: Mon Dec 11 13:06:41 2023 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -15,6 +15,7 @@
 </style>
 <title>the computer science oracle</title>
 
+ <LINK REL="stylesheet" TYPE="text/css" HREF="stylesheet.css">
 </head>
 <body>
 
@@ -29,7 +30,8 @@
 <hr>
 
 
-<p align="center"><i>lucas standen</i></p>
+<p align="center" style="margin-top: 1em"><i>lucas
+standen</i></p>
 
 <h2>1. number systems
 <a name="1. number systems"></a>
@@ -77,15 +79,15 @@ exponent</p>
 <table width="100%" border="0" rules="none" frame="void"
        cellspacing="0" cellpadding="0">
 <tr valign="top" align="left">
-<td width="10%">
+<td width="8%">
 
 
 <p>it will be in the form</p></td>
-<td width="10%">
+<td width="7%">
 
 
-<p>mantisa x 2 ^ exponent</p></td>
-<td width="80%">
+<p>mantisa x 2 &#710; exponent</p></td>
+<td width="85%">
 </td></tr>
 </table>
 
@@ -93,17 +95,17 @@ exponent</p>
 in 2s compliment values</p>
 
 <p style="margin-top: 1em">to convert to floating point try
-multiplying the number by ^ 2 ^ -x, where x is the exponent,
-you want to incress x until you reach a value that is bellow
-1, ie 0.925 then from there using a table calculate the
-mantisa the mantisa has the most signifigant bit as -1, then
-halfing as it goes down -1 | 1/2 | 1/4 | 1/8 etc... just use
-trial and error to find a value that is correct, it will
-usually be obvious</p>
+multiplying the number by x 2 &#710; -x, where x is the
+exponent, you want to incress x until you reach a value that
+is bellow 1, ie 0.925 then from there using a table
+calculate the mantisa the mantisa has the most signifigant
+bit as -1, then halfing as it goes down -1 | 1/2 | 1/4 | 1/8
+etc... just use trial and error to find a value that is
+correct, it will usually be obvious</p>
 
 <p style="margin-top: 1em">converting back to denary is
 very easy, as you calculate the mantisa and then do mantisa
-x 2 ^ exponent (sub in the values)</p>
+x 2 &#710; exponent (sub in the values)</p>
 
 <h3>1.2. hex
 <a name="1.2. hex"></a>
