@@ -46,6 +46,8 @@ a nice trick for converting hex is to take the first digit and then convert it i
 this trick also works the other way
 .NH 
 boolean
+.NH 2 
+overview
 .PP
 boolean logic is what powers our computers
 it is expressed with logic gates
@@ -71,10 +73,31 @@ A | B | out
 1 | 1 | 1
 
 these can be put together to make all other gates, like xor and nand
-
+.NH 2
+algebra
+.PP
 they can be expressed in algebra
 
 and is = a.b
 or is = a+b			     -
 not is expressed with a line over it a (use !(a) to express this on this doc)
+these can then be simplifed to make nicer expressions
+.NH 3
+basics
+.PP
+identitys:
+A.1 = A
+A+1 = 1
+A.0 = 0
+A+0 = A
+!(!(A)) = A
+
+theses are just a few simple ones, however they are self explanitory
+.NH 3
+advanced
+.PP
+demorgans law states:
+!(a+b) = !(a).!(b) (works both ways)
+this can be remembered with break the line change the sign
+
 
