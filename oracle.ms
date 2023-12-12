@@ -119,11 +119,15 @@ theses are just a few simple ones, however they are self explanitory
 advanced
 .PP
 demorgans law states:
+
 !(a+b) = !(a).!(b) (works both ways)
+
 this can be remembered with break the line change the sign
 
 absorbsion law states:
+
 a + !(a).b = a + b
+
 this can be seen in the truth table 
 
 a | b | !(a) | Q
@@ -138,4 +142,61 @@ a | b | !(a) | Q
 
 .NH 
 externel devices
+.PP
+.B 
+amy can you add some stuff here
+
+.NH
+software and hardware
+.NH 2
+software
+.NH 3
+system software
+.PP
+this kind of software is stuff usually provided by the os, it is used to manage the system/computer
+this is stuff like an antivirus, defrag tools and the os itself
+.NH 3
+aplication software
+.PP 
+this is software that the user uses to do the day to day tasks, like word processing, web browsing, playing games, etc
+this software is usually managed and installed by the user.
+.NH 3 
+general help
+.PP 
+just keep in mind that software is always stuff that is coded, hardware is not software
+as long as you remember these bits is a walk in the park
+.NH 2
+hardware
+.PP
+it's anything that is made with electrical stuff, in the computer science sense it is the cpu, memory and secondary storage
+.NH 
+computer architecture
+.NH 2
+the FDE cycle
+.NH 3
+fetch
+.PP
+the address from the PC, is copied to the MAR
+
+then the PC is incremented
+
+the address from the MAR goes down the address bus, and then the data from that address is copied to the MDR
+
+the MDR is coppied to the CIR
+
+the instruction in the
+.NH 3
+decode
+.PP
+the CIR is decoded by the control unit
+.NH 3
+execute
+.PP
+the instruction is run by the ALU
+
+status register gets updated
+
+
+
+
 
