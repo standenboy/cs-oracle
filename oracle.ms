@@ -95,10 +95,13 @@ and is = a.b
 
 or is = a+b
 
-not is expressed with a line over it a (use !(a) to express this on this doc) these can then be simplifed to make nicer expressions
+not is expressed with a line over it A 
+(use !(a) to express this on this doc) 
 .NH 3
 basics
 .PP
+these can then be simplifed to make nicer expressions
+
 identitys:
 
 A.1 = A
