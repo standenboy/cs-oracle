@@ -195,7 +195,24 @@ execute
 the instruction is run by the ALU
 
 status register gets updated
+.NH
+Types of language
+.PP
+there are 2 kinds of language, compiled and interpreted
 
+neither is better however they each have advantages
+.NH 2
+Compiled
+.PP 
+these are languages that get converted to object code then run, these languages are usually faster than others, however can be hard to debug
+
+some examples of this is: C/C++, Haskel, Rust
+.NH 2
+Interpreted
+.PP
+these languages run line by line, converting to machine code per line, they require a program to run them, they are slow compared to compiled languages, however easy to debug
+
+some examples are: python, lua, lisp and its derivatives
 
 
 
