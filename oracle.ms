@@ -9,6 +9,7 @@ number systems
 binary
 .PP 
 binary numbers are usually 8 bits long, or some multiple of 8 the least sigifigant bit (right most) is always 1 the next bit is 2 times the previous
+
 when adding numbers its just like normal but 1 is the largest number that can be in a collum
 .NH 3 
 negative values
@@ -30,19 +31,26 @@ mantisa x 2 ^ exponent
 both of these values are writen in 2s compliment values
 
 to convert to floating point try multiplying the number by x 2 ^ -x, where x is the exponent, you want to incress x until you reach a value that is bellow 1, ie 0.925
+
 then from there using a table calculate the mantisa
+
 the mantisa has the most signifigant bit as -1, then halfing as it goes down
+
 -1 | 1/2 | 1/4 | 1/8 etc...
+
 just use trial and error to find a value that is correct, it will usually be obvious
 
 converting back to denary is very easy, as you calculate the mantisa and then do
+
 mantisa x 2 ^ exponent (sub in the values)
 
 .NH 2 
 hex
 .PP 
 hex is easy enough, its base 16, so it goes from 0 - f, if you unsure on a value, think if it would be a valid color code
+
 a nice trick for converting hex is to take the first digit and then convert it into 4 binary bits (nibble), then put that together with all the other values; also converted to binary, then you have converted
+
 this trick also works the other way
 .NH 
 boolean
@@ -140,12 +148,6 @@ a | b | !(a) | Q
 
 1 | 1 |   0  | 1
 
-.NH 
-externel devices
-.PP
-.B 
-amy can you add some stuff here
-
 .NH
 software and hardware
 .NH 2
@@ -154,16 +156,19 @@ software
 system software
 .PP
 this kind of software is stuff usually provided by the os, it is used to manage the system/computer
+
 this is stuff like an antivirus, defrag tools and the os itself
 .NH 3
 aplication software
 .PP 
 this is software that the user uses to do the day to day tasks, like word processing, web browsing, playing games, etc
+
 this software is usually managed and installed by the user.
 .NH 3 
 general help
 .PP 
 just keep in mind that software is always stuff that is coded, hardware is not software
+
 as long as you remember these bits is a walk in the park
 .NH 2
 hardware
@@ -214,6 +219,49 @@ these languages run line by line, converting to machine code per line, they requ
 
 some examples are: python, lua, lisp and its derivatives
 
+.NH 1 
+error detection
+.NH 2 
+parity
+.PP
+parity is the idea of adding some additional data to a string of binary and using that to tell if the data was properaly sent
 
+the ones that i need to know are even and odd parity
 
+even parity counts the number of 1's in the binary and then if there is an odd number of them, a 0 is put on the end of the string (do a 1 if there is an even amount of 1's)
+
+odd parity is the same but in reverse
+
+when the data is recived by the other client, the parity bit will be checked, if the data is not matching the parity bit then the data will be sent again
+.NH 2 
+majority voting
+.PP
+this is where you send each bit of data many times
+
+example 
+
+original: 0010
+new: 000000111000
+
+in this example each bit is sent 3 times
+
+when the data is received a majority vote is used to reassemble the data
+.NH 1
+encryption
+.PP
+encryption is just changing some bit around until they are different, some methods are a ceser cipher or a vernam cipher
+.NH 1 
+ASM
+.PP
+asm is just moving data between registers
+
+its as low level as it gets
+
+use ldr to load values into a register
+
+use str to store a registers value to ram
+
+use cmp to compare stuff
+
+use b{nq}{eq}{gt}{lt} to branch between labels
 
